@@ -1,0 +1,235 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "acceptingEntries",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "depositSomeEthers",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "distributeTestEtherToMembers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "emergencySiphon",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getFullAddressListAndMessages",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "userAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "userMessage",
+								"type": "string"
+							}
+						],
+						"internalType": "struct HouseOfEtherHarvester.User[]",
+						"name": "addressListWithMessages",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOnlyAddressList",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "addressList",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOnlyAddressListLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "length",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bool",
+						"name": "flag",
+						"type": "bool"
+					}
+				],
+				"name": "setAcceptingNewEntries",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "storeMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "userAddresses",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "userMessages",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "user_message",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"getFullAddressListAndMessages()": {
+					"details": "Get all addresses & their associated user messages from the Harvester contract"
+				},
+				"getOnlyAddressList()": {
+					"details": "Get the full list of addresess that have previously participated (registered) in the Harvester contract."
+				},
+				"setAcceptingNewEntries(bool)": {
+					"details": "Set the flag of accepting new entries or not. Keep in mind, this test contract should be paused at some time, as the address array can grow arbitrarily long! Plus, the House of Ether workshops in Kavala (1st iteration) should finish by 2025, so they won't run forever! The flag is only changeable by the contract's deployer",
+					"params": {
+						"flag": "to set the `acceptingEntries` variable to."
+					}
+				},
+				"storeMessage(string)": {
+					"details": "Store a message and the sender address in the contract.",
+					"params": {
+						"message": "(as a simple string) to store"
+					}
+				}
+			},
+			"title": "House of Ether - Harvester contract!",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HouseOfEtherHarvester.sol": "HouseOfEtherHarvester"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HouseOfEtherHarvester.sol": {
+			"keccak256": "0xb3a09c2f520410d84d6e6031363bc620355ba2f38974ab6cbfaa90d4bb12e602",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6c3a445717500c0a137101db1f1cfd54dcb6932a74865f06442032e071dc839d",
+				"dweb:/ipfs/QmQ16pZZczzxGAJZgkMkXwGnKPxdk4g4MhdD6fXjPngS22"
+			]
+		}
+	},
+	"version": 1
+}

@@ -8,7 +8,7 @@ pragma solidity >=0.8.4;
  * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
  */
  
-contract HouseOfEther_Harvester {
+contract HouseOfEtherHarvester {
 
     struct User {
         address userAddress;

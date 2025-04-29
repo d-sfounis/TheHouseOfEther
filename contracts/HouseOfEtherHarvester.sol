@@ -4,10 +4,7 @@ pragma solidity >=0.8.4;
 
 /**
  * @title House of Ether - Harvester contract!
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
  */
- 
 contract HouseOfEtherHarvester {
 
     struct User {

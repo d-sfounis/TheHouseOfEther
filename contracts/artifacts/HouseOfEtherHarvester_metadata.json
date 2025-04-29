@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.29+commit.ab55807c"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -174,8 +174,6 @@
 			}
 		],
 		"devdoc": {
-			"custom:dev-run-script": "./scripts/deploy_with_ethers.ts",
-			"details": "Store & retrieve value in a variable",
 			"kind": "dev",
 			"methods": {
 				"getFullAddressListAndMessages()": {
@@ -223,11 +221,11 @@
 	},
 	"sources": {
 		"contracts/HouseOfEtherHarvester.sol": {
-			"keccak256": "0x452016b494e8681670218e91f8fd9a1a28c86d5310c6418b3ad64a306a5f83bc",
+			"keccak256": "0xb07655296bfdae457d7f483ca719fca012de6604e3570eba64f56fe7a7cf7092",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b980d1c52deeff5b23f9efbaee0a34270eadca63440bc620be1430609a36fc05",
-				"dweb:/ipfs/QmXvyQVhXpUpuZybcwZ8SLWziiMp2k4HpNg8okrH7Gv1bj"
+				"bzz-raw://544cf80dd5f17c08680871976a924e87d9525f6e871508e8256655beb5d642b8",
+				"dweb:/ipfs/QmcugqGpi5CKcvR1PyyYR52MnA9H4bSjFy538jGqGXeYMH"
 			]
 		}
 	},

@@ -221,11 +221,11 @@
 	},
 	"sources": {
 		"contracts/HouseOfEtherHarvester.sol": {
-			"keccak256": "0xb07655296bfdae457d7f483ca719fca012de6604e3570eba64f56fe7a7cf7092",
+			"keccak256": "0xd43a36e55f2879c8053fa1998bbbe6631e40ecd4ae3ff32e1e86f1b0983ee78e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://544cf80dd5f17c08680871976a924e87d9525f6e871508e8256655beb5d642b8",
-				"dweb:/ipfs/QmcugqGpi5CKcvR1PyyYR52MnA9H4bSjFy538jGqGXeYMH"
+				"bzz-raw://779cc271ff7274e03d604326ff3102d1d9c12259e277e9e92c0e50e4496bc436",
+				"dweb:/ipfs/Qmc2Gp99cJdftp9huoBn9D57cWtgovJBJD9ocMnjdcCsXS"
 			]
 		}
 	},

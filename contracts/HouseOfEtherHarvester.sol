@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.8.4;
+pragma solidity >=0.8.20;
 
 /**
  * @title House of Ether - Harvester contract!
@@ -51,6 +51,7 @@ contract HouseOfEtherHarvester {
      * @param message (as a simple string) to store
      */
     function storeMessage(string memory message) public {
+        require(acceptingEntries, "Not accepting new entries!");
         require(
             bytes(userMessages[msg.sender]).length == 0,
             "You've already stored a message in the past, sorry!"
